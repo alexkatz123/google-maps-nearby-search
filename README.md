@@ -20,25 +20,30 @@ This Python script allows you to find places for a specific activity within a 2-
 
 1. Clone the repository or download the script files.
 
-2. Navigate to the project directory.
+    ```sh
+    git clone https://github.com/alexkatz123/google-maps-nearby-search.git
+    cd google-maps-nearby-search
+    ```
 
-3. Create a virtual environment (optional but recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-   ```
+2. Create a virtual environment (optional but recommended):
 
-4. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+    ```sh
+    python -m venv venv
+    source venv/bin/activate   # On Windows use `venv\Scriptsctivate`
+    ```
+
+3. Install the required packages:
+
+    ```sh
+    pip install -r requirements.txt
+    ```
 
 ## Getting the API Key
 
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
+1. Go to the [Google Cloud Console](https://console.cloud.google.com).
 2. Create a new project or select an existing project.
-3. Navigate to the **API & Services** section and click on **Credentials**.
-4. Click on **Create Credentials** and select **API key**.
+3. Navigate to the API & Services section and click on Credentials.
+4. Click on Create Credentials and select API key.
 5. Copy the generated API key.
 
 ## Enabling Necessary APIs
@@ -51,37 +56,39 @@ Ensure the following APIs are enabled for your project in the Google Cloud Conso
 - Distance Matrix API
 
 To enable these APIs:
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
+
+1. Go to the [Google Cloud Console](https://console.cloud.google.com).
 2. Select your project.
-3. Navigate to **API & Services** > **Library**.
-4. Search for each API and click on **Enable**.
+3. Navigate to API & Services > Library.
+4. Search for each API and click on Enable.
 
 ## Billing Information
 
-A billing account is required for the Google Maps API to work. Make sure you have a billing account set up and linked to your project. You can set up billing in the [Google Cloud Console](https://console.cloud.google.com/billing/).
+A billing account is required for the Google Maps API to work. Make sure you have a billing account set up and linked to your project. You can set up billing in the [Google Cloud Console](https://console.cloud.google.com).
 
 ## Usage
 
-1. Open the \`app.py\` file and replace \`YOUR_GOOGLE_MAPS_API_KEY\` with your actual Google Maps API key.
+1. Open the `app.py` file and replace `YOUR_GOOGLE_MAPS_API_KEY` with your actual Google Maps API key.
 
 2. Run the script:
-   ```bash
-   python app.py
-   ```
+
+    ```sh
+    python app.py
+    ```
 
 3. Follow the prompts to enter your starting location, search center location, and activity type.
 
-4. The script will process the information and save the results to a CSV file named after the specified activity type (e.g., \`swimming.csv\`).
+4. The script will process the information and save the results to a CSV file named after the specified activity type (e.g., `swimming.csv`).
 
 ## Example
 
-```
+```sh
 Enter your starting location (latitude,longitude or DMS format or postcode): 52°37'17.0"N 2°14'41.6"W
 Enter the search center location (latitude,longitude or DMS format or postcode): 52°37'17.0"N 2°14'41.6"W
 Enter the activity type (e.g., swimming): swimming
 ```
 
-After running the script, a file named \`swimming.csv\` will be created with the details of the places found.
+After running the script, a file named `swimming.csv` will be created with the details of the places found.
 
 ## Notes
 
