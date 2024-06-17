@@ -29,7 +29,7 @@ This Python script allows you to find places for a specific activity within a 2-
 
     ```sh
     python -m venv venv
-    source venv/bin/activate   # On Windows use `venv\Scriptsctivate`
+    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
     ```
 
 3. Install the required packages:
